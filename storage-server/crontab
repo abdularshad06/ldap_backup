@@ -1,0 +1,4 @@
+cat /etc/crontab
+
+# *  *  *  *  * user-name  command to be executed
+* 6 * * * root /usr/bin/bash /etc/scripts/ldap_backup.sh >> /var/log/backup/ldap_backup.`date +\%d\-%m\-%Y\-%H\-%M\-%S`-cron.log 2>&1
