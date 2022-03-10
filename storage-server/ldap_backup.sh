@@ -9,8 +9,8 @@
 host="ldap1.manit.ac.in"
 
 # What to backup.
-backup_files1="/root/backup/config.ldif"
-backup_files2="/root/backup/data.ldif"
+backup_files1="/home/backup/config.ldif"
+backup_files2="/home/backup/data.ldif"
 
 # Where to backup to.
 dest="/home/backup/ldap_backup"
@@ -22,7 +22,6 @@ archive_file="$date"
 # Print start status message.
 echo "Backing up $backup_files to $dest/$archive_file"
 date
-echo
 
 # Backup the files using tar.
 #tar czf $dest/$archive_file $backup_files
@@ -31,9 +30,7 @@ rsync -zvh $host:$backup_files1 $dest/$archive_file/
 rsync -zvh $host:$backup_files2 $dest/$archive_file/
 
 # Print end status message.
-echo
 echo "Backup finished"
-date
 
 # Long listing of files in $dest to check file sizes.
-ls -lh $dest
+#ls -lh $dest
