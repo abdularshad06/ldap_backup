@@ -6,7 +6,7 @@
 ####################################
 
 # Server IP/Hostname.
-host="ldap1.manit.ac.in"
+host="ldap1.mXXXX.ac.in"
 
 # What to backup.
 backup_files1="/home/backup/config.ldif"
