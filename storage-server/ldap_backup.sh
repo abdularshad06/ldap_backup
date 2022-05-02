@@ -25,7 +25,7 @@ date
 
 # Backup the files using tar.
 #tar czf $dest/$archive_file $backup_files
-#rsync -zvh ldap1.manit.ac.in:/root/backup/config.ldif /home/backup/ldap_backup/
+#rsync -zvh ldap1.mXXXX.ac.in:/root/backup/config.ldif /home/backup/ldap_backup/
 rsync -zvh $host:$backup_files1 $dest/$archive_file/
 rsync -zvh $host:$backup_files2 $dest/$archive_file/
 
